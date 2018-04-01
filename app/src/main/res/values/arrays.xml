@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="places">
+        <item>武汉</item>
+        <item>武汉工程大学</item>
+        <item>武汉大学</item>
+        <item>华中科技大学</item>
+        <item>华中师范大学</item>
+        <item>武汉理工大学</item>
+        <item>中南名族大学</item>
+        <item>武汉纺织大学</item>
+        <item>中南财经政法大学</item>
+        <item>湖北大学</item>
+        <item>武汉科技大学</item>
+        <item>湖北工业大学</item>
+    </string-array>
+</resources>

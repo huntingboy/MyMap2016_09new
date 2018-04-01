@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nomad.mymap2016_09">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+ 
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="eec940bcaf5c8cbe7a739de642a35dbe" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Map"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nomad.geofence.FenceSetActivity"
+            android:label="围栏设置" />
+        <activity
+            android:name="com.nomad.geofence.FenceDeleteActivity"
+            android:label="删除围栏" />
+        <activity
+            android:name="com.nomad.login.LoginActivity"
+            android:label="@string/title_activity_login1" />
+        <activity
+            android:name="com.nomad.login.RegisterActivity"
+            android:label="@string/title_activity_register" />
+        <activity
+            android:name="com.nomad.location.TraceActivity"
+            android:label="个人轨迹" />
+        <activity
+            android:name="com.nomad.friend.FriendsActivity"
+            android:label="好友操作" />
+        <activity
+            android:name="com.nomad.friend.AddFriendActivity"
+            android:label="添加好友" />
+        <activity
+            android:name="com.nomad.friend.SelectFriendActivity"
+            android:label="好友列表"></activity>
+        <activity
+            android:name="com.nomad.friend.FriendInfoActivity"
+            android:label="好友信息"></activity>
+        <activity
+            android:name="com.nomad.friend.FriendFenceInfoActivity"
+            android:label="好友围栏"></activity>
+        <activity 
+            android:name="com.nomad.friend.FriendTraceInfoActivity"
+            android:label="好友轨迹"></activity>
+    </application>
+
+</manifest>
